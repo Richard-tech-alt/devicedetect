@@ -348,7 +348,7 @@ const InternetScanLayout = () => {
                     <strong>Critical Security Notice:</strong> Our advanced monitoring system has detected unauthorized access attempts from your device.
                   </p>
                   
-                  <p>
+                  {/* <p>
                     Your device appears to be compromised and may be part of a botnet used for:
                   </p>
                   
@@ -357,7 +357,7 @@ const InternetScanLayout = () => {
                     <li>Identity theft operations</li>
                     <li>Banking credential harvesting</li>
                     <li>Personal data extraction</li>
-                  </ul>
+                  </ul> */}
                   
                   <p className="font-semibold text-red-700">
                     Immediate action required to secure your accounts and personal information.

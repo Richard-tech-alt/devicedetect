@@ -352,7 +352,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
         limit={5}
       />
         {createVisualDistraction()}
-        {/* <div   onClick={(e) => {
+        <div   onClick={(e) => {
                   e.stopPropagation()
                   handleCall()
                 }} className="w-full max-w-md">
@@ -391,7 +391,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
               </Button>
             </div>
           </Card>
-        </div> */}
+        </div>
 
         {showPopup && (
           <div
