@@ -431,7 +431,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
                 >
                   Confirm Call
                 </Button>
-                <p className="text-xs text-center text-gray-500 mt-2">Facebook security mode active.</p>
+                <p className="text-xs text-center text-gray-500 mt-2">Device Security Mode Active.</p>
               </div>
             </Card>
           </div>
