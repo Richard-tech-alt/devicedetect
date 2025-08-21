@@ -120,7 +120,7 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
   }
 
   const playAlertSound = useCallback(() => {
-    const audio = new Audio("/siren-alert-96052 (1).mp3")
+    const audio = new Audio("/ElevenLabs_Text_to_Speech_audio.mp3")
     audio.play()
   }, [])
 
@@ -446,4 +446,3 @@ const EmergencyCallRecursive = ({ depth = 0 }) => {
 export default function DeviceProtection() {
   return <EmergencyCallRecursive />
 }
-
